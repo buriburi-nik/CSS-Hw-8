@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    max-width: 1920px;
+    min-height: 100vh;
+    background-color: hsla(210, 46%, 95%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.a1 {
+    background-color: hsla(263, 55%, 52%, 1);
+    background-image: url("https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+.a2 {
+    background-color: hsla(217, 19%, 35%, 1);
+}
+
+.a3, .a4 {
+    background-color: #fff;
+    color: #333;
+}
+
+.a5 {
+    background-color: hsla(219, 29%, 14%, 1);
+}
+
+.dp {
+    border-radius: 50%;
+    width: 2.5rem;
+}
+
+.author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.author p:first-child {
+    color: #fff;
+    font-weight: 500;
+}
+
+.author p:last-child {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.458);
+}
+
+.quote p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.quote p:last-child {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.458);
+}
+
+@media (max-width: 768px) {
+    .quote p {
+        font-size: 14px;
+    }
+    .dp {
+        width: 2rem;
+    }
+}
